@@ -1,0 +1,102 @@
+V "GNAT Lib v6"
+A -gnatA
+A -g
+A -g
+A -gnatf
+A -gnateDModule=MOD_WIN
+A -gnateDPrivate_Warnings=FALSE
+A -gnat12
+A -march=armv6
+A -mfloat-abi=hard
+A -mfpu=vfp
+A -mtls-dialect=gnu
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_RELATIVE_DELAY
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tests%b		tests.adb		b7671a26 NE OO PK IU
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W devs%s		devs.ads		devs.ali
+W devs.sysfs%s		devs-sysfs.adb		devs-sysfs.ali
+W devs.sysfs.static%s	devs-sysfs-static.adb	devs-sysfs-static.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U tests%s		tests.ads		58c32cc3 EE NE OO PK IU
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-calend.ads		20141120112812 d986d312 ada.calendar%s
+D a-caldel.ads		20140120152337 9f20b83d ada.calendar.delays%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D comm.ads		20200127160549 399b56ac comm%s
+D devs.ads		20200127160549 e7f4c689 devs%s
+D devs-sysfs.ads	20200127160549 3a9ce3a5 devs.sysfs%s
+D devs-sysfs-static.ads	20200127160549 b152388b devs.sysfs.static%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20151123113124 2a1dd890 system%s
+D s-conca2.ads		20140225151544 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stratt.ads		20131014135145 aedef97e system.stream_attributes%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D tests.ads		20200127160549 58c32cc3 tests%s
+D tests.adb		20200127160549 21bccb02 tests%b
+D text_io.ads		20070406091342 45d626c9 text_io%s
+X 8 a-textio.ads
+52P9*File_Type 32|13r25
+53n32*Out_File{53E9} 32|18r37
+92U14*Open 32|17s15
+93p7 File{52P9} 32|17r21
+94e7 Mode{53E9} 32|18r21
+95a7 Name{string} 32|19r21
+98U14*Close 32|23s15
+241U14*Put 32|21s15
+242U14*Put 32|33s59 35s60
+263U14*Put_Line 32|16s15 20s15 22s15 24s15
+X 11 devs.ads
+4K9*DEVS 5e9 32|2r6 2r22 3r6 7r26
+X 12 devs-sysfs.ads
+8K14*SYSFS 169e15 32|2w11 2r27 3r11 7r31
+122n7*OFF{121E9} 32|35r41
+123n7*ON{121E9} 32|33r41
+166V24 Set_State{boolean}<141p13> 32|33s30 35s30
+X 13 devs-sysfs-static.ads
+4K20*STATIC 38e22 32|3w17 7r37
+10p4*Dev_Lamp0(12|149R9) 32|33r20 35r20
+X 31 tests.ads
+4K9*TESTS 10l5 10e10 32|5b14 40l5 40t10
+6U14*Test_File_Handling 32|12b14 25l8 25t26
+8U14*Test_Lamps_012 32|28b14 38l8 38t22
+X 32 tests.adb
+7K12 SYSFS=7:37 33r14 35r14
+13p7 File_In{8|52P9} 17m29 17r29 21r20 23m22 23r22
+14a7 File_Path{string} 19r29 22r25 24r25
+29o7 Delay_Time{duration} 34r16 36r16
+X 33 text_io.ads
+24K9*Text_IO=24:29 32|1w6 13r17 16r7 17r7 18r29 20r7 21r7 22r7 23r7 24r7
+. 33r51 35r52
+
